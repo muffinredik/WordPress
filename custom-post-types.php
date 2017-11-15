@@ -27,6 +27,8 @@ function hpat_register_post_types() {
         'rewrite'       => array( 'slug' => 'project' ),
         'supports'      => array( 'title' ),
     );
+    
+    register_post_type( 'projects', $args );
 }
 
 ?>
