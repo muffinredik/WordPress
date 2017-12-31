@@ -1,20 +1,20 @@
 <?php
 
-add_shortcode( 'mwd_landkarte', 'mwd_landkarte_handler' );
+add_shortcode( 'hpat_shortcode', 'hpat_shortcode_handler' );
 
-function mwd_landkarte_handler() {
+function hpat_shortcode_handler() {
 
 	$output = "test";
 
 	return $output;
 }
 
-add_action( 'vc_before_init', 'mwd_vc_shortcodes' );
+add_action( 'vc_before_init', 'hpat_vc_shortcodes' );
 
-function mwd_vc_shortcodes() {
+function hpat_vc_shortcodes() {
 	vc_map( array(
-		"name" => __( "Medani Landkarte", "qode" ),
-		"base" => "mwd_landkarte",
+		"name" => __( "Hpat Shortcode", "theme-slug" ),
+		"base" => "hpat_shortcode",
 		"class" => "",
 		//"category" => __( "Content", "my-text-domain"),
 		//'admin_enqueue_js' => array(get_template_directory_uri().'/vc_extend/bartag.js'),
