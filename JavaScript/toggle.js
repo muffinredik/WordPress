@@ -1,11 +1,11 @@
 
 jQuery(document).ready(function($) {
-    //$('.medani-newsmodul-excerpt').hide();
+    //$('.hpat-newsmodul-excerpt').hide();
     
-    $('.medani-newsmodul-title').click(function(){
-        var content = $(this).siblings('.medani-newsmodul-excerpt');
+    $('.hpat-newsmodul-title').click(function(){
+        var content = $(this).siblings('.hpat-newsmodul-excerpt');
         if(content.is(":hidden")){
-            $('.medani-newsmodul-excerpt').slideUp();
+            $('.hpat-newsmodul-excerpt').slideUp();
             content.slideDown();
         }
         else {
