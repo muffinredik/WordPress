@@ -1,8 +1,8 @@
-$('.wu-media-navigation a').live('click', function(e){
+$('.hpat-post-navigation a').live('click', function(e){
     e.preventDefault();
     var link = $(this).attr('href');
-    var mediaItemsWrapper = $('#wu-media-items-wrapper');
-    mediaItemsWrapper.load(link+' #wu-media-items'); 
-    var offset = mediaItemsWrapper.offset().top - 200;
+    var postsWrapper = $('#hpat-posts-wrapper');
+    postsWrapper.load(link+' #hpat-posts'); 
+    var offset = postsWrapper.offset().top - 200;
     $(window).scrollTop(offset);
 });
