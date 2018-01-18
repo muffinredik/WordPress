@@ -1,5 +1,4 @@
 <?php
-
 add_action( 'add_meta_boxes', 'hpat_meta_boxes_init' );
 
 function hpat_meta_boxes_init() {
@@ -31,7 +30,6 @@ function hpat_task_meta_box( $post, $box ) {
 add_action( 'save_post', 'hpat_save_task_meta_box' );
 
 function hpat_save_task_meta_box( $post_id ) {
-    
                 
     if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
         return;
@@ -49,5 +47,3 @@ function hpat_save_task_meta_box( $post_id ) {
         update_post_meta( $post_id, '_hpat_project_slug', $_POST['hpat_project_slug'] );
     }
 }
-
-?>
