@@ -21,5 +21,3 @@ function hpat_get_custom_post_array( $custom_post = 'post' ) {
     
     return $custom_post_type_elements;
 }
-
-?>
