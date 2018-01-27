@@ -22,7 +22,7 @@ function hpat_task_meta_box( $post, $box ) {
     echo '/></p>'; 
     echo '<p>Project: <select name="hpat_project_slug">';
     foreach ($hpat_projects as $hpat_project) {
-        echo '<option value="' . $hpat_project[slug] . '" ' . selected( $hpat_project_slug, $hpat_project[slug], false ) . '>' . $hpat_project[title] . '</option>';
+        echo '<option value="' . $hpat_project['slug'] . '" ' . selected( $hpat_project_slug, $hpat_project['slug'], false ) . '>' . $hpat_project['title'] . '</option>';
     }
     echo '</select>';
 }
