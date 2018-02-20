@@ -1,0 +1,3 @@
+
+Serach and REplace http to https
+find . -exec sed -i 's|http://domain.at|https://domain.at|g' {} \;
