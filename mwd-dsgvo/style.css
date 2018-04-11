@@ -1,0 +1,36 @@
+.hidden,
+.hidden-section-field,
+.mwd-dsgvo-single-section h2:last-child {
+    display: none;
+}
+
+.mwd-dsgvo-version-table p {
+    padding: 0;
+    margin: 0;
+}
+
+#mwd-dsgvo-versions {
+    max-height: 15em;
+    margin-bottom: 3em;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.mwd-dsgvo-reset-text {
+    margin-right: 1em !important;
+}
+
+.mwd-dsgvo-single-section {
+    background-color: #b4b9be;
+    padding: 1.5em 2em;
+}
+
+.mwd-dsgvo-single-section h2,
+.mwd-dsgvo-single-section p,
+.mwd-dsgvo-single-section th {
+    color: #23282d;
+}
+
+.mwd-dsgvo-single-section h2 {
+    margin-top: 0;
+}
