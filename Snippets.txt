@@ -4,3 +4,8 @@ find . -exec sed -i 's|http://domain.at|https://domain.at|g' {} \;
 
 Creating a WordPress Patch
 git diff --no-prefix > ~/some-feature.diff
+
+http tp https
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
