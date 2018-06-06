@@ -22,3 +22,14 @@ function hpat_vc_shortcodes() {
 		"params" => array()
 	) );
 }
+
+function bartag_func( $atts ) {
+	$atts = shortcode_atts(
+		array(
+			'foo' => 'no foo',
+			'bar' => 'default bar',
+		), $atts, 'bartag' );
+
+	return 'bartag: ' . $atts['foo'] . ' ' . $atts['bar'];
+}
+add_shortcode( 'bartag', 'bartag_func' );
