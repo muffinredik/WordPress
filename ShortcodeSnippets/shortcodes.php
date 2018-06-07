@@ -33,3 +33,15 @@ function bartag_func( $atts ) {
 	return 'bartag: ' . $atts['foo'] . ' ' . $atts['bar'];
 }
 add_shortcode( 'bartag', 'bartag_func' );
+
+function wporg_shortcode($atts = [], $content = null)
+{
+    // do something to $content
+ 
+    // run shortcode parser recursively
+    $content = do_shortcode($content);
+ 
+    // always return
+    return $content;
+}
+add_shortcode('wporg', 'wporg_shortcode');
