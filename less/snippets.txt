@@ -1,4 +1,10 @@
 Auf Hetzner installieren
-
 https://wiki.hetzner.de/index.php/Installation_g%C3%A4ngiger_Software_(Managed_Server)
 https://github.com/jonycheung/deadsimple-less-watch-compiler
+
+@font-face {
+	font-family: 'clan bold';
+	src: url('../fonts/clan/clanbold.eot#')  format('eot'),
+		 url('../fonts/clan/clanbold.woff')  format('woff'),
+		 url('../fonts/clan/clanbold.ttf')   format('truetype');
+}
