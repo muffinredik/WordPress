@@ -1,0 +1,4 @@
+Auf Hetzner installieren
+
+https://wiki.hetzner.de/index.php/Installation_g%C3%A4ngiger_Software_(Managed_Server)
+https://github.com/jonycheung/deadsimple-less-watch-compiler
