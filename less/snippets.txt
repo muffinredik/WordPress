@@ -8,3 +8,13 @@ https://github.com/jonycheung/deadsimple-less-watch-compiler
 		 url('../fonts/clan/clanbold.woff')  format('woff'),
 		 url('../fonts/clan/clanbold.ttf')   format('truetype');
 }
+
+ -ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for WebKit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
