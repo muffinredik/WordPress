@@ -1,0 +1,4 @@
+// add Javascript Event
+$('.button')[0].addEventListener('click', function () {
+		doSomething();
+	}, false);
