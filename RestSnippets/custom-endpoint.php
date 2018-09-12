@@ -1,7 +1,9 @@
 <?php 
 
 function function_name( $params ) {
-	return 'bar';
+	$parameters = $request_data->get_params();
+    	$id = $parameters['id'];
+    	return json_encode(get_dsgvo_infos_by_id($id));
 }
 
 add_action( 'rest_api_init', function () {
