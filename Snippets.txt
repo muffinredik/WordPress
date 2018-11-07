@@ -12,6 +12,7 @@ RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 
 https://github.com/YahnisElsts/plugin-update-checker
 
+https://next.httpstatus.io/
 #regex redirects
 RewriteEngine on
 RewriteRule ^.*\/xyz-(.*).html /de/p/xyz-$1/ [R=301,L]
