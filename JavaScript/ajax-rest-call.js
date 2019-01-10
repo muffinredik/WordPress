@@ -1,4 +1,4 @@
-$('#mwd-dsgvo-general-get-signa-site-infos').live('click', function(e){
+$('#general-get-site-infos').live('click', function(e){
 		e.preventDefault();
 
 		$.ajax({
