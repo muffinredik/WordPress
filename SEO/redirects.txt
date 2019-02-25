@@ -1,0 +1,16 @@
+
+#regex redirects
+RewriteEngine on
+RewriteRule ^.*\/xyz-(.*).html /de/p/xyz-$1/ [R=301,L]
+
+#redirects mit get parametern
+RewriteCond %{QUERY_STRING} search_query=([0-9]+) [NC]
+RewriteRule ^ https://www.xyz.com/h/p/xyz-%1/? [R=301,L]
+
+#301 redirect
+RewriteRule ^.*de/xyz/ ziel.at/de/xyz/ [R=301,NC,L]
+
+#http to https
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
