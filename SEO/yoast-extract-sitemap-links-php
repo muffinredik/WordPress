@@ -1,0 +1,17 @@
+<?php
+
+$urls = array();
+$xml = simplexml_load_file('http://relaunch.park-residenz.at/sitemap_index.xml');
+
+for($i = 0; $i < $xml->count(); $i++) {
+	$urlInner = $xml->children()[$i]->loc;
+	$links = simplexml_load_file( $urlInner );
+	for($j = 0; $j < $links->count(); $j++) {
+		array_push( $urls, (string)$links->children()[$j]->loc );
+    }
+}
+
+//display it
+echo "<pre>";
+print_r($urls);
+echo "</pre>";
