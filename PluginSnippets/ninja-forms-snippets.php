@@ -20,3 +20,15 @@ Settings – ninja_forms_admin_settings_capabilities
 Get Help – ninja_forms_admin_status_capabilities
 Add-Ons – ninja_forms_admin_extend_capabilities
 */
+
+
+
+// Ninja Forms Add Attachments
+add_filter( 'ninja_forms_action_email_attachments', function( $attachments, $data, $settings ) {
+
+	if ($data['form_id'] == 8) {
+		// Append file path.
+		$attachments[] = '_path_tp_file_';
+		return $attachments;
+	}
+}, 10, 3 );
