@@ -1,5 +1,5 @@
 
-Serach and REplace http to https
+Serach and Replace http to https
 find . -exec sed -i 's|http://domain.at|https://domain.at|g' {} \;
 
 Creating a WordPress Patch
@@ -7,4 +7,8 @@ git diff --no-prefix > ~/some-feature.diff
 
 https://github.com/YahnisElsts/plugin-update-checker
 
-
+Filebased php debugging
+$fp = fopen("dl-test.txt","w");
+$line = serialize($api_response) . "\r\n";
+fwrite($fp,$line);
+fclose($fp);
