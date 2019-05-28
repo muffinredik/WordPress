@@ -1,3 +1,4 @@
+<?php
 /**
  * add method to register event to WordPress init
  */
