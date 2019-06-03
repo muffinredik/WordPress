@@ -6,6 +6,7 @@ Creating a WordPress Patch
 git diff --no-prefix > ~/some-feature.diff
 
 https://github.com/YahnisElsts/plugin-update-checker
+https://rudrastyh.com/wordpress/self-hosted-plugin-update.html
 
 Filebased php debugging
 $fp = fopen("dl-test.txt","w");
