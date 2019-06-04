@@ -1,0 +1,3 @@
+#export table with certain prefix
+mysql -u DB_USER -p -N information_schema -e "select table_name from tables where table_schema = 'DB_NAME' and table_name like 'bak_%'" > tables.txt
+mysqldump -u DB_USER -p DB_NAME `cat tables.txt` > dump_file.sql
