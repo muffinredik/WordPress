@@ -5,3 +5,9 @@ mysqldump -u DB_USER -p DB_NAME `cat tables.txt` > dump_file.sql
 #simple export / import
 mysql -u DB_USER -p DB_NAME > dump_file.sql
 mysql -u DB_USER -p DB_NAME < dump_file.sql
+
+#copy tables and content
+CREATE TABLE offices_dup LIKE offices;
+ 
+INSERT office_dup
+SELECT * FROM offices;
