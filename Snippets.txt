@@ -2,6 +2,10 @@
 Serach and Replace http to https
 find . -exec sed -i 's|http://domain.at|https://domain.at|g' {} \;
 
+Too Many Redirects
+if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
+	$_SERVER['HTTPS']='on';
+
 Creating a WordPress Patch
 git diff --no-prefix > ~/some-feature.diff
 
