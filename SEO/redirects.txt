@@ -8,7 +8,7 @@ RewriteCond %{QUERY_STRING} search_query=([0-9]+) [NC]
 RewriteRule ^ https://www.xyz.com/h/p/xyz-%1/? [R=301,L]
 
 #301 redirect
-RewriteRule ^.*de/xyz/ ziel.at/de/xyz/ [R=301,NC,L]
+RewriteRule ^programm/?$ /programm/kalender/ [L,R=301]
 
 #http to https
 RewriteEngine On
