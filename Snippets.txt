@@ -18,4 +18,7 @@ $line = serialize($api_response) . "\r\n";
 fwrite($fp,$line);
 fclose($fp);
 
+Exctract site from multisite
+https://deliciousbrains.com/wp-migrate-db-pro/doc/extracting-a-subsite-from-multisite-to-create-a-new-single-site-install/
+
 
