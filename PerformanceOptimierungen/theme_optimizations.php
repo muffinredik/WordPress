@@ -1,3 +1,4 @@
+<?php
 //REST API Link entfernen
 //Füge diesen Code in deine functions.php ein
 remove_action('wp_head', 'rest_output_link_wp_head');
