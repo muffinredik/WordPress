@@ -14,3 +14,11 @@ RewriteRule ^programm/?$ /programm/kalender/ [L,R=301]
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+#Domain Redirect
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^olddomain.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.olddomain.com$
+  RewriteRule (.*)$ http://www.newdomain.com/$1 [R=301,L]
+</IfModule>
