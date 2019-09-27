@@ -2,6 +2,9 @@
 Serach and Replace http to https
 find . -exec sed -i 's|http://domain.at|https://domain.at|g' {} \;
 
+Fehler: Access denied; you need (at least one of) the SUPER privilege(s) for this operation
+sed 's/\sDEFINER=`[^`]*`@`[^`]*`//g' -i oldfile.sql
+
 Too Many Redirects
 if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
 	$_SERVER['HTTPS']='on';
