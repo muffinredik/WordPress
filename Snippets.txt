@@ -27,4 +27,7 @@ https://deliciousbrains.com/wp-migrate-db-pro/doc/extracting-a-subsite-from-mult
 ssh key gen for mac
 ssh-keygen -m PEM -t rsa -b 4096 -C "your_email@example.com"
 
+chrome Settings
+chrome://net-internals/#events
+
 
