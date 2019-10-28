@@ -2,7 +2,7 @@
 
 // get posts afer now
 $args = array (
-  'post_type' => 'mwd_events',
+  'post_type' => 'dl_events',
   'order' => 'ASC',
   'orderby' => 'meta_value',
   'meta_key' => 'wpcf-datum_anfang',
