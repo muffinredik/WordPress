@@ -1,0 +1,3 @@
+// find script tatgs with specific url
+<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>
+<script src='https:\/\/dns.createrelativechanging\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>
