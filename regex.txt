@@ -3,5 +3,5 @@
 // find script tatgs with specific url
 <script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>
 <script src='https:\/\/www.domain\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>
-
+<img([^>]+)src="x([^>]*)>
 
