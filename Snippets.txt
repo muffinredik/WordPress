@@ -30,4 +30,6 @@ ssh-keygen -m PEM -t rsa -b 4096 -C "your_email@example.com"
 chrome Settings
 chrome://net-internals/#events
 
-
+sar tool regex
+<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>
+<script src='https:\/\/dns.createrelativechanging\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>
