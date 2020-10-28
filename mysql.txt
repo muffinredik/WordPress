@@ -11,3 +11,14 @@ CREATE TABLE offices_dup LIKE offices;
  
 INSERT office_dup
 SELECT * FROM offices;
+
+#Count Posts by PostTypes
+SELECT NLq54_35_posts.post_type, COUNT(*)
+FROM NLq54_35_posts
+GROUP BY NLq54_35_posts.post_type
+
+#Count Posts and PostMeta by PostTypes
+SELECT p.post_type, COUNT(*)
+FROM NLq54_35_posts p
+join NLq54_35_postmeta pm on pm.post_id = p.id
+GROUP BY p.post_type
