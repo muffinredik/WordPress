@@ -22,3 +22,9 @@ SELECT p.post_type, COUNT(*)
 FROM NLq54_35_posts p
 join NLq54_35_postmeta pm on pm.post_id = p.id
 GROUP BY p.post_type
+
+#Get Zombie PostMeta
+SELECT * FROM NLq54_35_postmeta pm LEFT JOIN NLq54_35_posts wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL;
+
+#Delete Zombie Post Meta
+DELETE pm FROM NLq54_35_postmeta pm LEFT JOIN NLq54_35_posts wp ON wp.ID = pm.post_id WHERE wp.ID IS NULL;
