@@ -33,3 +33,5 @@ chrome://net-internals/#events
 sar tool regex
 <script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>
 <script src='https:\/\/dns.createrelativechanging\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>
+
+lsof -i:5000
