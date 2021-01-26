@@ -14,8 +14,8 @@ function dl_year_handler( $atts ) {
 
 	// Default Values
 	$atts = shortcode_atts(
-			array(
-				'credit' => 'by Dominik Liss',
+		array(
+			'credit' => 'by Dominik Liss',
 		), $atts );
 
 	return date( 'Y' ) . ' - ' . $atts['credit'];
